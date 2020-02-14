@@ -1,0 +1,10 @@
+[Unit]
+Description=Workout Buddy Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/src/workout-buddy/env/bin/python /home/pi/src/workout-buddy/main.py
+
+[Install]
+WantedBy=multi-user.target
